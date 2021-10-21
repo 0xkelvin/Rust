@@ -13,4 +13,17 @@ fn main() {
         Some(x) => println!("Item 7 is {}", x),
         None => println!("Sorry, this vector is too short")
     }
+
+    //Iterating
+    for i in &v {
+        println!("a reference to {}", i);
+    }
+
+    for i in &mut v {
+        println!("a mutable reference to {}", i);
+    }
+
+    for i in v {
+        println!("take ownership of the vector and its element {}", i);
+    }
 }
